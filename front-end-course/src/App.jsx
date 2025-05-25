@@ -1,11 +1,9 @@
-import { useState } from "react";
-import Header from "./components/Header/Header.jsx";
+import { useState,Fragment } from "react";
 
 import CoreConcept from "./components/CoreConcept.jsx";
+import Header from "./components/Header/Header.jsx";
 import { CORE_CONCEPTS } from "./data.js";
-
 import {EXAMPLES} from './data.js';
-
 import TabButton from "./components/TabButton.jsx";
 
 
@@ -34,7 +32,8 @@ function App() {
     }
 
   return (
-    <div>
+
+    <>
       <Header />
       <main>
         <section id="core-concepts">
@@ -72,7 +71,7 @@ function App() {
 
 
       </main>
-    </div>
+    </>
   );
 }
 
