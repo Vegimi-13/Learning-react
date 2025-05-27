@@ -1,9 +1,9 @@
-export default function Tabs({children,buttons,buttonContainer}){
+export default function Tabs({children,buttons,ButtonsContainer}){
     //Krijo nje variable qe e run vleren e prop -> buttonContainer
-    const ButtonContainer = buttonContainer;
+    // const ButtonContainer = buttonContainer;
     return(
         <>
-            <ButtonContainer>{buttons} </ButtonContainer>
+            <ButtonsContainer>{buttons} </ButtonsContainer>
             {children}
         </>
             
